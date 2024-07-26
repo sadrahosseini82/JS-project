@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libarary Site</title>
+    <script src="./data.js"></script>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>محصولات</h1>
+        <input
+         type="text"
+         placeholder="جست و جو..."
+         onkeyup="handleSearch(event)"
+         />
+
+         <div>
+            <h3 onclick="renderBasket()">کتابخانه من (<span id="basket">0</span>)</h3>
+         </div>
+    </header>
+    <div id="root"></div>
+</body>
+</html>
